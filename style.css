@@ -18,13 +18,13 @@
 
 
 ::selection {
-    background: #7cc576;
+    background: #b3b3b3;
     color: #fff;
 }
 
 
 ::-moz-selection {
-    background: #7cc576;
+    background: #b3b3b3;
     color: #fff;
 }
 
@@ -73,9 +73,9 @@ html {
 body {
     background-color: #fbfbfb;
     color: #333;
-    font-size: 1.125em; /* font-size: 18px; */
+    font-size: 1.0em; /* font-size: 1.125em;  or 18px; */
     font-family: 'Proxima', sans-serif;
-    line-height: 1.8;
+    line-height: 1.6; /* line-height: 1.6; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +157,39 @@ section {
 .last-special {
     margin-right: 0% !important;
 }
+
+/* kath added: */
+/*
+.wrap{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding 1em;
+}
+.wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+/* kath added: */
+/*
+#primary{
+    float: left;
+    max-width: 600px;
+    margin: 0 auto;
+*/
+/*    padding: 1em;*/
+/*    width: 50%;*/
+/*}*/
+    /* kath added: */
+/*
+#secondary{
+    max-width: 600px;
+    margin: 0 auto;
+    float: right;
+*/
+/*    width: 50%;*/
+/*}*/
 
 /*----------------------------------------------------------------
     Perfect Fourth (http://type-scale.com)
@@ -1734,6 +1767,7 @@ section.greyish {
 }
 
 .section-title {
+/*    margin-top: -2em; kath added*/
     margin-bottom: 2em;
     text-align: center;
 }
@@ -1786,6 +1820,46 @@ section.greyish {
     border-radius: 25%;
     background-color: rgba(0,0,0,0.03);
     line-height: 2;
+}
+.small-icon2,
+.big-icon2 {
+    width: 2em;
+    height: 2em;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    border-radius: 25%;
+    background-color: rgba(0,0,0,0);
+    line-height: 2;
+}
+.small-icon2.transparent.yellow2,
+input.transparent.button.yellow2 {
+    width: 2em;
+    height: 2em;
+    margins: 1em;
+    padding: .7em .7em;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    border-radius: 25%;
+    border: 2px solid rgba(255,171,12,1);
+    color: rgba(255,171,12,1) !important;
+    line-height: 2;
+    font-size: 20px;
+}
+
+/* original:254,205,94,1 */
+
+.small-icon2.transparent.yellow2:hover,
+input.small-icon2.transparent.yellow2:hover {
+    width: 2em;
+    height: 2em;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    border-radius: 25%;
+    line-height: 2;
+    font-size: 20px;
+    border: 2px solid rgba(254,205,94,1);
+    background-color: rgba(254,205,94,1);
+    color: #fff !important;
 }
 
 .small-icon-text {
@@ -2913,6 +2987,13 @@ i.fa.yellow {
 }
 /* original:fecd5e  */
 
+.yellow2,
+i.icon.yellow,
+i.fa.yellow {
+    color: rgba(255,171,12,1);
+}
+
+
 .green,
 i.icon.green,
 i.fa.green {
@@ -3599,7 +3680,7 @@ footer .row-content.buffer {
 ----------------------------------------------------------------*/
 
 @media handheld, only screen and (max-width:40em) {
-
+    
     #intro .caption h2,
     #intro .caption-mockup h2 {
         font-size: 2.4em;
@@ -3620,7 +3701,7 @@ footer .row-content.buffer {
 ----------------------------------------------------------------*/
 
 @media handheld, only screen and (max-width:48em) {
-
+    
     header {
         position: relative !important;
         background-color: #fff !important;
